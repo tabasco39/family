@@ -1,12 +1,12 @@
 import  React  from 'react' ;
-import './style.css';
+import './style.scss';
 import front from '../asset/family-illustration-1.png';
 import shield_blue from '../asset/shield-1.png'
 
 const Section7 = () => {
     return(
-    <div id="bg">
-        <div className="flex" style={{width:"100%"}}>
+    <div id="bg mt-5">
+        <div className="flex mt-5" style={{width:"100%"}}>
             <div className="box-accordion">
                 <div id="accordion" className="accordion">
                     <div class="card">
@@ -81,16 +81,18 @@ const Section7 = () => {
                 <img src= {front} alt='family' height="800px" width="auto"/>
             </div>
         </div>
-        <div className='flex parent' style={{position:'absolute', top:"45%", left:"50%", transform:"translateX(-50%)"}}>
-            <div >
-                <img className="img" src={shield_blue} alt="shied" height="60px"/>
-            </div>
-            <div className='flex child'>
-                <div>
-                    <h3>100% Satisfaction Guarantee</h3>
-                    <small>We offer no questions asked refund policy for 14 days from the policy date.</small>
+        <div style={{position:'relative'}}>
+            <div className='flex parent' style={{position:'absolute', bottom:"160px", left:"50%", transform:"translateX(-50%)"}}>
+                <div >
+                    <img className="img" src={shield_blue} alt="shied" height="60px"/>
                 </div>
-                <button className="button">Get your free Quote</button>
+                <div className='flex child'>
+                    <div>
+                        <h3>100% Satisfaction Guarantee</h3>
+                        <small>We offer no questions asked refund policy for 14 days from the policy date.</small>
+                    </div>
+                    <button className="button">Get your free Quote</button>
+                </div>
             </div>
         </div>
     </div>

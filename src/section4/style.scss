@@ -1,0 +1,22 @@
+.body1 {
+    display: flex;
+    justify-content: flex-end;
+
+    .fond {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 100%;
+        }
+    }
+    .quote {
+        width: 100%;
+        max-width: 430px;
+        transform: translateX(150px)
+        
+    }
+    .font{
+        font-size: 24px;
+    }
+}

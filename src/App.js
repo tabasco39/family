@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Header from './section1/header';
 import Section2 from './section2';
 import Section3 from './section3';

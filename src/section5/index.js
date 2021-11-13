@@ -1,10 +1,10 @@
 import  React  from 'react' ;
-import './style.css';
+import './style.scss';
 import shield from '../asset/shield-2.png'
 
 const Section5 = () => {
     return(
-        <div className='flex parent'>
+        <div className='container flex parent'>
             <div >
                 <img className="img" src={shield} alt="shied" height="60px"/>
             </div>
