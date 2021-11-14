@@ -4,6 +4,7 @@ import './style.scss'
 
 import Content from '../content';
 import Nav from './nav';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -19,7 +20,7 @@ const Header = () => {
                             </div>
                             
                             <h1>Insurance <br/> made easy.</h1>
-                            <button className="btn-header">Get your free Quote</button>
+                            <button className="btn-header "><Link to="/freeQuote" className="text-decoration-none" style={{color:"white"}}>Get your free Quote</Link></button>
                         </div> 
                     </div>
                 </div>             

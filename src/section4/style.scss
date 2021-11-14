@@ -1,6 +1,9 @@
 .body1 {
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 576px){
+        display: unset;
+    }
 
     .fond {
         width: 60%;
@@ -8,12 +11,22 @@
         justify-content: flex-end;
         img{
             width: 100%;
+            object-fit: contain;
+            @media (max-width: 576px){
+                display: none;
+            }
         }
     }
     .quote {
         width: 100%;
         max-width: 430px;
-        transform: translateX(150px)
+        transform: translateX(150px);
+        @media (max-width: 768px){
+            transform: none;
+        }
+        @media (max-width: 576px){
+            text-align: center;
+        }
         
     }
     .font{

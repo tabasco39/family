@@ -82,7 +82,7 @@ const Section7 = () => {
             </div>
         </div>
         <div style={{position:'relative'}}>
-            <div className='flex parent' style={{position:'absolute', bottom:"160px", left:"50%", transform:"translateX(-50%)"}}>
+            <div id="mobile" className='flex parent' style={{position:'absolute', bottom:"160px", left:"50%", transform:"translateX(-50%)"}}>
                 <div >
                     <img className="img" src={shield_blue} alt="shied" height="60px"/>
                 </div>

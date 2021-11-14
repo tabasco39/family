@@ -3,13 +3,36 @@
         width: 75%;
         justify-content: flex-end;
         display: flex;
+        @media (max-width:578px) {
+            width: unset;
+            margin: 0 15px;
+        }
+        @media (max-width:578px) {
+            button{
+                font-size: 14px;
+            }
+        }
+    
     }
     .accordion{
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
     }
     .flex-end{
         display: flex;
         justify-content: flex-end;
         width: 50%;
+        @media (max-width:992px) {
+            width: unset;
+        }
+        @media (max-width:578px) {
+            display: none;
+        }
+    }
+    @media (max-width:578px) {
+        #mobile{
+            position: unset !important;
+            transform: none !important;
+        }
     }
 
