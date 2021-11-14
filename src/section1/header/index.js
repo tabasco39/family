@@ -1,21 +1,15 @@
 import  React  from 'react' ;
-import logo from '../../asset/logo.png';
 import banner from '../../asset/banner-1.png';
 import './style.scss'
 
 import Content from '../content';
+import Nav from './nav';
 
 const Header = () => {
     return (
         <div>
-            <div className="header">
-                <ul className="border-style " >   
-                    <li><img src={logo} alt="logo"/> </li>
-                    <li>For you and family</li>
-                    <li>For Business</li>
-                </ul>
-            </div>
 
+            <Nav/>
             <div className="box_container">
                 <div className='wrap-content'>
                     <div className="className = content">

@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Routes, Route  } from 'react-router-dom'
 // import './font/circular';
+
+import Family from './page/family';
+import Business from './page/business';
+import FreeQuote from './page/freeQuote';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="family" element={<Family />} />
+        <Route path="business" element={<Business />} />
+        <Route path="freeQuote" element={<FreeQuote/>} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
